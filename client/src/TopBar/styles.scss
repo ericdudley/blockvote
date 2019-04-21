@@ -1,0 +1,25 @@
+@import "../colors.scss";
+
+.appbar {
+  &__logo {
+    margin-right: 16px;
+  }
+
+  &__title {
+    color: $gallery;
+    min-width: 96px;
+  }
+
+  &__tabs {
+    margin-right: 16px;
+  }
+
+  &__select {
+    width: 200px;
+    margin: 0 8px;
+
+    &__text {
+      color: white !important;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../colors.scss";
+
+.vote-page {
+  display: flex;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 16px auto;
+  width: 728px;
+
+  &__single {
+    width: 300px;
+    margin-right: 128px;
+    &__ballot-key {
+      width: 200px;
+    }
+
+    &__submit {
+      width: 200px;
+    }
+  }
+
+  &__batch {
+    width: 300px;
+    &__ballot-key {
+      width: 200px;
+      height: 64px;
+    }
+
+    &__submit {
+      width: 200px;
+      height: 48px;
+    }
+  }
+}
+
+.sortable {
+  padding: 0;
+  margin: 0;
+
+  &__handle {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__item {
+    text-align: center;
+    padding: 0 40px;
+    position: relative;
+    list-style: none;
+    color: $dove-gray;
+    background-color: $gallery;
+    cursor: pointer;
+    line-height: 40px;
+    height: 40px;
+
+    &--disabled {
+      color: $silver-chalice;
+    }
+  }
+
+  &__rank {
+    font-size: 16px;
+    position: absolute;
+    right: 8px;
+  }
+}

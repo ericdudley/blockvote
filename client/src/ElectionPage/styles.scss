@@ -1,0 +1,21 @@
+@import "../index.scss";
+
+.election-page {
+  &__new-form {
+    display: flex;
+    flex-direction: column;
+    width: $form-width;
+    margin: 16px auto;
+
+    &__input {
+      margin-top: 16px !important;
+    }
+  }
+
+  &__response {
+    display: flex;
+    flex-direction: column;
+    width: $form-width;
+    margin-top: 16px;
+  }
+}

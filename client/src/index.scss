@@ -1,0 +1,87 @@
+$form-width: 300px;
+
+html,
+body,
+#root,
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import "colors.scss";
+
+.logo {
+  min-width: $logo-size;
+  min-height: $logo-size;
+  background-color: red;
+  animation: logo-spin 7s infinite ease-in-out;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotateZ(0deg);
+    border-radius: 0px;
+    background-color: red;
+  }
+  50% {
+    border-radius: $logo-size / 2;
+    background-color: #3f50b5;
+  }
+  to {
+    transform: rotateZ(360deg);
+    border-radius: 0px;
+    background-color: red;
+  }
+}
+
+.status {
+  &-wrapper {
+    height: 100%;
+    display: inline-flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  display: inline-block;
+  $size: 8px;
+  width: $size;
+  margin: 0 4px;
+  height: $size;
+  border-radius: $size / 2;
+  line-height: 16px;
+
+  &--online {
+    background-color: #34c300;
+  }
+
+  &--offline {
+    background-color: #ff0000;
+  }
+}
+
+.json-pre {
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}

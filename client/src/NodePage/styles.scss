@@ -1,0 +1,49 @@
+$width: 1600px;
+
+.node-page {
+  width: $width;
+  margin: 16px auto;
+
+  &--empty {
+    text-align: center;
+    width: auto;
+    margin: 16px auto;
+
+    &__spinner {
+      margin-top: 16px;
+    }
+  }
+
+  display: flex;
+  flex-direction: row;
+
+  &__graph {
+    width: $width / 2;
+    height: $width / 2;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    &__actions {
+      margin: 8px;
+    }
+    &__cards {
+      width: $width / 2;
+      height: 180px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      &__card {
+        position: relative;
+        margin: 8px;
+        width: 300px;
+      }
+      &__card-status {
+        position: absolute;
+        top: 4px;
+        right: 8px;
+      }
+    }
+  }
+}

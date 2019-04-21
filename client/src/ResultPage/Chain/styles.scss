@@ -1,0 +1,16 @@
+.chain {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 32px;
+
+  &__block {
+    flex: 0 0 auto;
+    display: inline-block;
+    min-height: 200px;
+    min-width: 200px;
+    margin: 16px;
+    border: 2px grey solid;
+    border-radius: 4px;
+  }
+}

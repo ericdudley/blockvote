@@ -1,0 +1,16 @@
+.election-results {
+  width: 600px;
+  margin: 16px auto;
+
+  &__system {
+    margin-bottom: 16px;
+  }
+
+  &__candidate {
+    margin-right: 16px;
+  }
+
+  &__table {
+    margin-top: 24px;
+  }
+}
