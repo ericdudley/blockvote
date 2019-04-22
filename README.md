@@ -12,3 +12,8 @@ To run the client first install dependencies defined in `package.json` by runnin
 
 # Server
 To run the server first install dependencies defined in `requirements.txt` by running `pip3 install -r requirements.txt`. After installing dependencies, a node can be started by running `python3 app.py --port [port to list on] [--miner]`.
+
+![Node Page](img/feature_nodes.png)
+![Election Creation Page](img/feature_election_creation.png)
+![Voting Page](img/feature_cast.png)
+![Election Monitoring Page](img/feature_election_monitoring.png)
